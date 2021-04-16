@@ -1,0 +1,120 @@
+body {
+  background-color: #f2f2f2;
+  line-height: 2;
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: white;
+  opacity: .75;
+}
+
+.btn {
+  border-radius: 40px;
+  padding: .8rem 2.3rem;
+  margin: 1.5rem 0.2rem 1.5rem 0;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: inherit;
+  color: white;
+  border: solid 2px white;
+}
+
+
+.btn-orange {
+  color: #e38826;
+}
+
+.btn-te {
+  color: #006970;
+
+}
+
+.btn-bl {
+  color: #004241;
+}
+
+.icon {
+  margin: 1.5rem .5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+  margin-top: 9vh;
+  margin-bottom: 5vh;
+  padding: 0;
+}
+ .sedans {
+   background-color: #e38826;
+   border-top-right-radius: 3%;
+   border-top-left-radius: 3%;
+ }
+
+ .SUV {
+   background-color: #006970
+ }
+
+ .luxury {
+   background-color: #004241;
+   border-bottom-left-radius: 3%;
+   border-bottom-right-radius: 3%;
+ }
+
+.sedans, .SUV ,.luxury {
+  padding: 8vw 8vh;
+}
+
+
+
+@media (min-width: 850px) {
+
+  .container {
+    flex-direction: row;
+  }
+
+  .sedans {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3%;
+  }
+
+  .luxury {
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 0;
+  }
+
+  .sedans, .SUV ,.luxury {
+    padding: 8vw 5vh;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 70vw;
+    margin-top: 11vh;
+    margin-bottom: 11vh;
+    }
+
+    .btn {
+      margin-bottom: 0;
+      margin-top: 10vh;
+    }
+
+
+}
